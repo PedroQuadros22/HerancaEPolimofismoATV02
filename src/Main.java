@@ -1,14 +1,13 @@
 import java.time.LocalDate;
+import java.text.ParseException;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Date;
+import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws ParseException {
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         List<Product>list=new ArrayList<>();
         System.out.print("Enter the number of products: ");
